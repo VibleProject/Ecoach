@@ -1,0 +1,269 @@
+[gd_scene format=3 uid="uid://csktyl1mu0oiw"]
+
+[ext_resource type="Script" uid="uid://whdsndavoct7" path="res://main_home.gd" id="1_4ml37"]
+[ext_resource type="Texture2D" uid="uid://dpwx5titso634" path="res://홈화면.png" id="2_4ml37"]
+[ext_resource type="Texture2D" uid="uid://5qapt8i6gnrl" path="res://카트 버튼.png" id="2_51dvj"]
+[ext_resource type="Texture2D" uid="uid://b218qcuwcw1cu" path="res://버튼 1.png" id="3_0wqka"]
+[ext_resource type="Texture2D" uid="uid://b5y5gciefaf67" path="res://도감 버튼.PNG" id="4_4ml37"]
+[ext_resource type="Texture2D" uid="uid://clxm220oiaoeh" path="res://KakaoTalk_20260512_210840375.png" id="5_xed8n"]
+[ext_resource type="Texture2D" uid="uid://bmxq3lhf3m2wp" path="res://길쭉한 버튼-파란색.png" id="6_8hi3p"]
+[ext_resource type="Texture2D" uid="uid://n6uogyfyesdr" path="res://오투.png" id="7_8hi3p"]
+[ext_resource type="Texture2D" uid="uid://dpfxbbytrgh5s" path="res://워터.png" id="8_fi8pe"]
+[ext_resource type="Texture2D" uid="uid://cwjl2cx1pah77" path="res://캐시그림.png" id="11_3rahp"]
+[ext_resource type="Texture2D" uid="uid://4dmse8x5ua4f" path="res://캐시.png" id="12_33ov0"]
+[ext_resource type="Script" uid="uid://c0hijen7w2frc" path="res://Poop.gd" id="14_63sk2"]
+[ext_resource type="Texture2D" uid="uid://bkal5h58mm2lo" path="res://poop.png" id="14_kqrs5"]
+[ext_resource type="Texture2D" uid="uid://jte7ywjw1ok0" path="res://환경수치바.png" id="14_plhii"]
+[ext_resource type="Texture2D" uid="uid://di6yy40sryd0" path="res://게이지.png" id="15_srm3x"]
+[ext_resource type="Texture2D" uid="uid://8rtr6udnanov" path="res://메시지박스.png" id="16_plhii"]
+
+[sub_resource type="FontFile" id="FontFile_33ov0"]
+cache/0/variation_coordinates = {}
+cache/0/face_index = 0
+cache/0/embolden = 0.0
+cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
+cache/0/spacing_top = 0
+cache/0/spacing_bottom = 0
+cache/0/spacing_space = 0
+cache/0/spacing_glyph = 0
+cache/0/baseline_offset = 0.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+
+[node name="MainHome" type="Control" unique_id=413713291]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 649.0
+offset_bottom = 1339.0
+script = ExtResource("1_4ml37")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1054662044]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 66.645004
+anchor_bottom = 30.873001
+offset_left = -105.00001
+offset_top = -119.0
+offset_right = -41032.17
+offset_bottom = -37540.996
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.37812796, 0.39541003)
+texture = ExtResource("2_4ml37")
+
+[node name="HouseButton" type="TextureButton" parent="Background" unique_id=1333088353]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 0
+offset_left = 372.88965
+offset_top = 1944.8164
+offset_right = 599.7131
+offset_bottom = 2021.7816
+scale = Vector2(2.2489023, 4.415439)
+
+[node name="TreeButton" type="TextureButton" parent="Background" unique_id=940399308]
+layout_mode = 0
+offset_left = 1483.6245
+offset_top = 1482.0057
+offset_right = 1522.3088
+offset_bottom = 1522.0057
+scale = Vector2(14.271959, 19.29752)
+
+[node name="캐릭터" type="TextureRect" parent="." unique_id=2010747912]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 258.0
+offset_top = 762.00006
+offset_right = 519.0867
+offset_bottom = 1015.47174
+scale = Vector2(0.6115082, 0.6115082)
+
+[node name="TextureButton3" type="TextureButton" parent="." unique_id=110479363]
+layout_mode = 0
+offset_left = 470.0
+offset_top = 1056.0001
+offset_right = 854.0
+offset_bottom = 1348.0001
+scale = Vector2(0.64058596, 0.7374972)
+texture_normal = ExtResource("4_4ml37")
+
+[node name="ShopButton" type="TextureButton" parent="." unique_id=2022466886]
+layout_mode = 0
+offset_left = 30.999998
+offset_top = 1065.0
+offset_right = 386.0
+offset_bottom = 1325.0
+scale = Vector2(0.6422638, 0.71872824)
+texture_normal = ExtResource("2_51dvj")
+
+[node name="FoodButton" type="TextureButton" parent="." unique_id=860946809]
+layout_mode = 0
+offset_left = 235.0
+offset_top = 1049.0
+offset_right = 489.0
+offset_bottom = 1213.0
+scale = Vector2(1.0194628, 1.2872303)
+texture_normal = ExtResource("3_0wqka")
+
+[node name="TextureRect" type="TextureRect" parent="FoodButton" unique_id=6310136]
+layout_mode = 0
+offset_left = 42.85884
+offset_top = 26.182251
+offset_right = 360.85883
+offset_bottom = 285.18225
+scale = Vector2(0.5384926, 0.46375114)
+texture = ExtResource("5_xed8n")
+
+[node name="FoodPanel" type="Panel" parent="FoodButton" unique_id=1954992172]
+visible = false
+layout_mode = 0
+offset_left = -96.01688
+offset_top = -78.57491
+offset_right = -56.016876
+offset_bottom = -38.574913
+scale = Vector2(11.882942, 2.4154296)
+
+[node name="ButtonBlue" type="TextureRect" parent="FoodButton/FoodPanel" unique_id=1621903209]
+layout_mode = 0
+offset_left = -1.6734943
+offset_top = -14.994148
+offset_right = 2019.3265
+offset_bottom = 444.00586
+scale = Vector2(0.021335928, 0.12167591)
+texture = ExtResource("6_8hi3p")
+
+[node name="O2Icon" type="TextureRect" parent="FoodButton/FoodPanel" unique_id=789019025]
+layout_mode = 0
+offset_left = 0.8914039
+offset_top = -3.0322583
+offset_right = 137.8914
+offset_bottom = 129.96774
+scale = Vector2(0.04957594, 0.20991297)
+mouse_filter = 0
+texture = ExtResource("7_8hi3p")
+
+[node name="O2Label" type="Label" parent="FoodButton/FoodPanel" unique_id=725681280]
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 8.009972
+offset_top = 1.286499
+offset_right = 48.00997
+offset_bottom = 24.286499
+scale = Vector2(0.25137877, 0.9433416)
+
+[node name="WaterIcon" type="TextureRect" parent="FoodButton/FoodPanel" unique_id=1012794617]
+layout_mode = 0
+offset_left = 18.513773
+offset_top = -3.0322669
+offset_right = 142.51378
+offset_bottom = 134.96773
+scale = Vector2(0.055978768, 0.21894386)
+mouse_filter = 0
+texture = ExtResource("8_fi8pe")
+
+[node name="WaterLabel" type="Label" parent="FoodButton/FoodPanel" unique_id=1402052878]
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 25.827965
+offset_top = 1.3328066
+offset_right = 65.827965
+offset_bottom = 24.332806
+scale = Vector2(0.25343704, 0.97872806)
+
+[node name="환경수치바" type="TextureProgressBar" parent="." unique_id=1100441972]
+layout_mode = 0
+offset_left = 55.999996
+offset_top = 93.00003
+offset_right = 836.0
+offset_bottom = 193.00005
+scale = Vector2(0.79914176, 0.79914176)
+texture_under = ExtResource("14_plhii")
+texture_progress = ExtResource("15_srm3x")
+
+[node name="TopUI" type="Control" parent="." unique_id=1204701670]
+anchors_preset = 0
+offset_left = -11.0
+offset_top = -16.999998
+offset_right = 29.0
+offset_bottom = 23.000002
+scale = Vector2(1.2574327, 1.3207147)
+
+[node name="Environment" type="TextureRect" parent="TopUI" unique_id=1969260538]
+layout_mode = 0
+offset_top = 12.87182
+offset_right = 40.0
+offset_bottom = 52.87182
+scale = Vector2(0.94187677, 0.910477)
+
+[node name="EnvironmentLabel" type="Label" parent="TopUI/Environment" unique_id=1307356807]
+layout_mode = 0
+offset_left = 529.40576
+offset_top = 92.309204
+offset_right = 569.4058
+offset_bottom = 115.309204
+scale = Vector2(0.9868883, 1.7031249)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "0"
+
+[node name="Cash" type="TextureRect" parent="TopUI" unique_id=1195654465]
+layout_mode = 0
+offset_left = 19.086508
+offset_top = 12.114639
+offset_right = 1679.9022
+offset_bottom = 381.90887
+scale = Vector2(0.10261744, 0.2108959)
+texture = ExtResource("12_33ov0")
+
+[node name="CashIcon" type="TextureRect" parent="TopUI/Cash" unique_id=1461869148]
+visible = false
+layout_mode = 0
+offset_left = -526.9907
+offset_top = 491.86218
+offset_right = 1873.0093
+offset_bottom = 1660.8622
+scale = Vector2(0.65448195, 0.36994955)
+texture = ExtResource("11_3rahp")
+
+[node name="CashLabel" type="Label" parent="TopUI/Cash" unique_id=544367254]
+layout_mode = 0
+offset_left = 782.73627
+offset_top = 89.755745
+offset_right = 822.73627
+offset_bottom = 112.755745
+scale = Vector2(18.545483, 8.820057)
+theme_override_colors/font_color = Color(0.078431375, 0.078431375, 0.078431375, 1)
+theme_override_fonts/font = SubResource("FontFile_33ov0")
+text = "0"
+
+[node name="PoopContainer" type="Node2D" parent="." unique_id=477108632]
+
+[node name="Poop" type="TextureButton" parent="." unique_id=2004970839]
+layout_mode = 0
+offset_left = 772.0
+offset_top = 877.0
+offset_right = 2026.0
+offset_bottom = 2131.0
+scale = Vector2(0.25386798, 0.24831788)
+texture_normal = ExtResource("14_kqrs5")
+script = ExtResource("14_63sk2")
+
+[node name="메시지박스" type="TextureRect" parent="." unique_id=1610790856]
+visible = false
+layout_mode = 0
+offset_left = 58.0
+offset_top = 414.0
+offset_right = 635.0
+offset_bottom = 847.0
+texture = ExtResource("16_plhii")
+
+[connection signal="hidden" from="Background/HouseButton" to="." method="_on_house_button_hidden"]
+[connection signal="hidden" from="Background/HouseButton" to="." method="_on_texture_button_4_hidden"]
+[connection signal="pressed" from="Background/HouseButton" to="." method="_on_house_button_pressed"]
+[connection signal="hidden" from="Background/TreeButton" to="." method="_on_tree_button_hidden"]
+[connection signal="pressed" from="Background/TreeButton" to="." method="_on_tree_button_pressed"]
+[connection signal="pressed" from="TextureButton3" to="." method="_on_texture_button_3_pressed"]
+[connection signal="pressed" from="ShopButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="FoodButton" to="." method="_on_food_button_pressed"]
+[connection signal="pressed" from="FoodButton" to="." method="_on_texture_button_2_pressed"]

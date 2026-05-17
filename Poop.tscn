@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://balwcnnsb3pu"]
+
+[ext_resource type="Texture2D" uid="uid://bkal5h58mm2lo" path="res://poop.png" id="1_lpi03"]
+[ext_resource type="Script" uid="uid://c0hijen7w2frc" path="res://Poop.gd" id="1_vqr27"]
+
+[node name="Poop" type="TextureButton" unique_id=2126992071]
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("1_lpi03")
+script = ExtResource("1_vqr27")

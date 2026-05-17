@@ -1,0 +1,645 @@
+[gd_scene format=3 uid="uid://cvp61ffyua1n2"]
+
+[ext_resource type="Script" uid="uid://br4yfr55ybmbe" path="res://도감.gd" id="1_8344g"]
+[ext_resource type="Texture2D" uid="uid://csc2ooutfaea7" path="res://collection/도감 배경.PNG" id="1_eo1l1"]
+[ext_resource type="Texture2D" uid="uid://roncpilxkmaq" path="res://collection/X 버튼.png" id="2_3twmx"]
+[ext_resource type="Texture2D" uid="uid://b5hnshoqnq3h8" path="res://collection/캐릭터 칸/1모찌찌.PNG" id="3_rmdy7"]
+[ext_resource type="Texture2D" uid="uid://cbhpv810jhhyc" path="res://collection/캐릭터 칸/2 세모모.PNG" id="4_8344g"]
+[ext_resource type="Texture2D" uid="uid://dxx5aj6dp4mlr" path="res://collection/1페이지 버튼.png" id="4_p4oc5"]
+[ext_resource type="Texture2D" uid="uid://dxl06uy158sf0" path="res://collection/캐릭터 칸/3 뭉게게.PNG" id="5_e34ht"]
+[ext_resource type="Texture2D" uid="uid://bgdw5qfw5twh4" path="res://collection/캐릭터 칸/잠금.PNG" id="5_gxlxq"]
+[ext_resource type="Texture2D" uid="uid://b6l8ntlkr4xbj" path="res://collection/2페이지 버튼.png" id="5_r06do"]
+[ext_resource type="Texture2D" uid="uid://bd4wqbs05mnuc" path="res://collection/캐릭터 칸/4 나무무.PNG" id="6_gxlxq"]
+[ext_resource type="Texture2D" uid="uid://b8x6cdu8qpfi4" path="res://collection/캐릭터 칸/5 슝슝이.PNG" id="7_vix5v"]
+[ext_resource type="Texture2D" uid="uid://bqpoveiqq2ne0" path="res://collection/캐릭터 칸/6 클로로.PNG" id="8_t7xkq"]
+[ext_resource type="Texture2D" uid="uid://vlaeub6dk17k" path="res://collection/캐릭터 칸/7 돌돌이.PNG" id="9_6vhyj"]
+[ext_resource type="Texture2D" uid="uid://cgxgur04twoka" path="res://collection/캐릭터 칸/8 별별이.PNG" id="10_ulo2p"]
+[ext_resource type="Texture2D" uid="uid://bm23v7jbtmc01" path="res://collection/캐릭터 칸/9 유유이.PNG" id="11_r3767"]
+[ext_resource type="Texture2D" uid="uid://cyo8uotffxcnr" path="res://collection/캐릭터 칸/10 워터터.PNG" id="12_g3o7w"]
+[ext_resource type="Texture2D" uid="uid://cbex400o6uj3c" path="res://collection/캐릭터 칸/11 퐁퐁이.PNG" id="13_6ksuf"]
+[ext_resource type="Texture2D" uid="uid://biacvg8vyx4l7" path="res://collection/캐릭터 칸/12 햄스스.PNG" id="14_uy8ew"]
+[ext_resource type="Texture2D" uid="uid://djtniydbfa0g1" path="res://collection/캐릭터 칸/13 푸푸리.PNG" id="17_xg670"]
+[ext_resource type="Texture2D" uid="uid://boyr68if188fu" path="res://collection/캐릭터 칸/14 플로로.PNG" id="18_gt8wg"]
+[ext_resource type="Texture2D" uid="uid://c2b6fxp1mtac0" path="res://collection/캐릭터 칸/15 룽룽이.PNG" id="19_p4oc5"]
+[ext_resource type="Texture2D" uid="uid://qrvk2c4xxbe3" path="res://collection/캐릭터 칸/16 동동이.PNG" id="20_r06do"]
+[ext_resource type="Texture2D" uid="uid://d1p7bviv2ucme" path="res://collection/캐릭터 칸/17 쫀쪼니.PNG" id="21_drlt3"]
+[ext_resource type="Texture2D" uid="uid://jdwv1tnnvt34" path="res://collection/캐릭터 칸/18 삐요요.png" id="22_p51i8"]
+[ext_resource type="Texture2D" uid="uid://bm5bc766qysgo" path="res://collection/캐릭터 칸/19 야야옹.PNG" id="23_5ywjt"]
+[ext_resource type="Texture2D" uid="uid://detswpr4h4fik" path="res://collection/캐릭터 칸/20 삼삼이.PNG" id="24_rx84n"]
+[ext_resource type="Texture2D" uid="uid://bwhfmsmo6kltu" path="res://collection/캐릭터 칸/21사보보.PNG" id="25_3x6q0"]
+[ext_resource type="Texture2D" uid="uid://pakmkws0n840" path="res://collection/캐릭터 칸/22 플플이.PNG" id="26_53046"]
+[ext_resource type="Texture2D" uid="uid://dnftlgt040ead" path="res://collection/캐릭터 칸/23 뭉치치.PNG" id="27_rwslg"]
+[ext_resource type="Texture2D" uid="uid://cqjh2w1pi2uqu" path="res://collection/캐릭터 칸/24 둥둥이.PNG" id="28_yqyvm"]
+
+[node name="Control" type="Control" unique_id=686541374]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_right = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.67118937, 0.6704548)
+script = ExtResource("1_8344g")
+
+[node name="배경" type="TextureRect" parent="." unique_id=690804491]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_right = -1.0
+texture = ExtResource("1_eo1l1")
+
+[node name="팝업" type="Control" parent="." unique_id=305154109]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="팝업" unique_id=1843482302]
+layout_mode = 0
+offset_left = 132.0
+offset_top = 637.0
+offset_right = 941.0
+offset_bottom = 1357.0
+
+[node name="X 버튼" type="TextureButton" parent="." unique_id=1054538716]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.4770001
+anchor_top = 0.012
+anchor_right = 1.4770001
+anchor_bottom = 0.012
+offset_left = -150.13599
+offset_top = -0.4447508
+offset_right = -0.13598633
+offset_bottom = 130.55525
+texture_normal = ExtResource("2_3twmx")
+
+[node name="1페이지 버튼" type="TextureButton" parent="." unique_id=975867044]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -350.50653
+offset_top = 1657.085
+offset_right = -200.50653
+offset_bottom = 1788.085
+texture_normal = ExtResource("4_p4oc5")
+
+[node name="2페이지 버튼" type="TextureButton" parent="." unique_id=870743591]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -95.734924
+offset_top = 1657.0842
+offset_right = 54.265076
+offset_bottom = 1788.0842
+texture_normal = ExtResource("5_r06do")
+
+[node name="1페이지" type="Control" parent="." unique_id=698558229]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="카드1" type="Control" parent="1페이지" unique_id=1176427002]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="1페이지/카드1" unique_id=1448960899]
+layout_mode = 0
+offset_left = 118.0
+offset_top = 337.0
+offset_right = 409.0
+offset_bottom = 689.0
+texture_normal = ExtResource("3_rmdy7")
+
+[node name="TextureRect" type="TextureRect" parent="1페이지/카드1" unique_id=1261727067]
+layout_mode = 0
+offset_left = 115.0
+offset_top = 355.0
+offset_right = 393.0
+offset_bottom = 720.0
+texture = ExtResource("5_gxlxq")
+
+[node name="카드2" type="Control" parent="1페이지" unique_id=1637178713]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="1페이지/카드2" unique_id=1515404617]
+layout_mode = 0
+offset_left = 413.0
+offset_top = 341.0
+offset_right = 696.0
+offset_bottom = 667.0
+texture_normal = ExtResource("4_8344g")
+
+[node name="TextureRect" type="TextureRect" parent="1페이지/카드2" unique_id=272587620]
+layout_mode = 0
+offset_left = 392.0
+offset_top = 355.0
+offset_right = 670.0
+offset_bottom = 720.0
+texture = ExtResource("5_gxlxq")
+
+[node name="카드3" type="Control" parent="1페이지" unique_id=1092503652]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="1페이지/카드3" unique_id=1102990935]
+layout_mode = 0
+offset_left = 666.0
+offset_top = 351.0
+offset_right = 965.0
+offset_bottom = 680.0
+texture_normal = ExtResource("5_e34ht")
+
+[node name="TextureRect" type="TextureRect" parent="1페이지/카드3" unique_id=777255576]
+layout_mode = 0
+offset_left = 673.0
+offset_top = 354.0
+offset_right = 951.0
+offset_bottom = 719.0
+texture = ExtResource("5_gxlxq")
+
+[node name="카드4" type="Control" parent="1페이지" unique_id=699163853]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="1페이지/카드4" unique_id=579322001]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 691.0
+offset_right = 403.0
+offset_bottom = 985.0
+texture_normal = ExtResource("6_gxlxq")
+
+[node name="TextureRect" type="TextureRect" parent="1페이지/카드4" unique_id=2045282919]
+layout_mode = 0
+offset_left = 117.0
+offset_top = 667.0
+offset_right = 395.0
+offset_bottom = 1032.0
+texture = ExtResource("5_gxlxq")
+
+[node name="카드5" type="Control" parent="1페이지" unique_id=1241435994]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="1페이지/카드5" unique_id=1229599021]
+layout_mode = 0
+offset_left = 405.0
+offset_top = 710.0
+offset_right = 684.0
+offset_bottom = 988.0
+texture_normal = ExtResource("7_vix5v")
+
+[node name="TextureRect" type="TextureRect" parent="1페이지/카드5" unique_id=1405387638]
+layout_mode = 0
+offset_left = 394.0
+offset_top = 670.0
+offset_right = 672.0
+offset_bottom = 1035.0
+texture = ExtResource("5_gxlxq")
+
+[node name="카드6" type="Control" parent="1페이지" unique_id=1606142552]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="1페이지/카드6" unique_id=1340273401]
+layout_mode = 0
+offset_left = 662.0
+offset_top = 699.0
+offset_right = 969.0
+offset_bottom = 989.0
+texture_normal = ExtResource("8_t7xkq")
+
+[node name="TextureRect" type="TextureRect" parent="1페이지/카드6" unique_id=351340132]
+layout_mode = 0
+offset_left = 672.0
+offset_top = 673.0
+offset_right = 950.0
+offset_bottom = 1038.0
+texture = ExtResource("5_gxlxq")
+
+[node name="카드7" type="Control" parent="1페이지" unique_id=1119943723]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="1페이지/카드7" unique_id=704457250]
+layout_mode = 0
+offset_left = 119.0
+offset_top = 1014.0
+offset_right = 399.0
+offset_bottom = 1310.0
+texture_normal = ExtResource("9_6vhyj")
+
+[node name="TextureRect" type="TextureRect" parent="1페이지/카드7" unique_id=1870288523]
+layout_mode = 0
+offset_left = 118.0
+offset_top = 977.0
+offset_right = 396.0
+offset_bottom = 1342.0
+texture = ExtResource("5_gxlxq")
+
+[node name="카드8" type="Control" parent="1페이지" unique_id=1527562200]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="1페이지/카드8" unique_id=1524706423]
+layout_mode = 0
+offset_left = 403.0
+offset_top = 1014.0
+offset_right = 683.0
+offset_bottom = 1301.0
+texture_normal = ExtResource("10_ulo2p")
+
+[node name="TextureRect" type="TextureRect" parent="1페이지/카드8" unique_id=24939481]
+layout_mode = 0
+offset_left = 396.0
+offset_top = 977.0
+offset_right = 674.0
+offset_bottom = 1342.0
+texture = ExtResource("5_gxlxq")
+
+[node name="카드9" type="Control" parent="1페이지" unique_id=1633505229]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="1페이지/카드9" unique_id=521929725]
+layout_mode = 0
+offset_left = 675.0
+offset_top = 1005.0
+offset_right = 973.0
+offset_bottom = 1312.0
+texture_normal = ExtResource("11_r3767")
+
+[node name="TextureRect" type="TextureRect" parent="1페이지/카드9" unique_id=819966459]
+layout_mode = 0
+offset_left = 676.0
+offset_top = 978.0
+offset_right = 954.0
+offset_bottom = 1343.0
+texture = ExtResource("5_gxlxq")
+
+[node name="카드10" type="Control" parent="1페이지" unique_id=573992718]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="1페이지/카드10" unique_id=1794172178]
+layout_mode = 0
+offset_left = 119.0
+offset_top = 1325.0
+offset_right = 417.0
+offset_bottom = 1626.0
+texture_normal = ExtResource("12_g3o7w")
+
+[node name="TextureRect" type="TextureRect" parent="1페이지/카드10" unique_id=1675337973]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 1284.0
+offset_right = 398.0
+offset_bottom = 1649.0
+texture = ExtResource("5_gxlxq")
+
+[node name="카드11" type="Control" parent="1페이지" unique_id=1019949682]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="1페이지/카드11" unique_id=948919513]
+layout_mode = 0
+offset_left = 402.0
+offset_top = 1314.0
+offset_right = 690.0
+offset_bottom = 1627.0
+texture_normal = ExtResource("13_6ksuf")
+
+[node name="TextureRect" type="TextureRect" parent="1페이지/카드11" unique_id=2064511278]
+layout_mode = 0
+offset_left = 396.0
+offset_top = 1287.0
+offset_right = 674.0
+offset_bottom = 1652.0
+texture = ExtResource("5_gxlxq")
+
+[node name="카드12" type="Control" parent="1페이지" unique_id=1104283742]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="1페이지/카드12" unique_id=379714353]
+layout_mode = 0
+offset_left = 668.0
+offset_top = 1327.0
+offset_right = 977.0
+offset_bottom = 1625.0
+texture_normal = ExtResource("14_uy8ew")
+
+[node name="TextureRect" type="TextureRect" parent="1페이지/카드12" unique_id=659751137]
+layout_mode = 0
+offset_left = 679.0
+offset_top = 1288.0
+offset_right = 957.0
+offset_bottom = 1653.0
+texture = ExtResource("5_gxlxq")
+
+[node name="2페이지" type="Control" parent="." unique_id=1702835866]
+layout_mode = 1
+anchor_right = 1.524
+anchor_bottom = 1.5000001
+offset_right = -1057.28
+offset_bottom = -1880.0001
+
+[node name="카드13" type="Control" parent="2페이지" unique_id=963257338]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="2페이지/카드13" unique_id=1380257573]
+layout_mode = 0
+offset_left = 114.0
+offset_top = 373.0
+offset_right = 405.0
+offset_bottom = 748.0
+texture_normal = ExtResource("17_xg670")
+
+[node name="TextureRect" type="TextureRect" parent="2페이지/카드13" unique_id=1452741417]
+layout_mode = 0
+offset_left = 115.0
+offset_top = 355.0
+offset_right = 393.0
+offset_bottom = 720.0
+texture = ExtResource("5_gxlxq")
+
+[node name="카드14" type="Control" parent="2페이지" unique_id=1754864210]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="2페이지/카드14" unique_id=759289451]
+layout_mode = 0
+offset_left = 402.0
+offset_top = 368.0
+offset_right = 685.0
+offset_bottom = 698.0
+texture_normal = ExtResource("18_gt8wg")
+
+[node name="TextureRect" type="TextureRect" parent="2페이지/카드14" unique_id=1684156340]
+layout_mode = 0
+offset_left = 392.0
+offset_top = 355.0
+offset_right = 670.0
+offset_bottom = 720.0
+texture = ExtResource("5_gxlxq")
+
+[node name="카드15" type="Control" parent="2페이지" unique_id=2070426385]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="2페이지/카드15" unique_id=293936936]
+layout_mode = 0
+offset_left = 664.0
+offset_top = 380.0
+offset_right = 966.0
+offset_bottom = 747.0
+texture_normal = ExtResource("19_p4oc5")
+
+[node name="TextureRect" type="TextureRect" parent="2페이지/카드15" unique_id=631251911]
+layout_mode = 0
+offset_left = 673.0
+offset_top = 354.0
+offset_right = 951.0
+offset_bottom = 719.0
+texture = ExtResource("5_gxlxq")
+
+[node name="카드16" type="Control" parent="2페이지" unique_id=1436889006]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="2페이지/카드16" unique_id=228238458]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 683.0
+offset_right = 405.0
+offset_bottom = 1007.0
+texture_normal = ExtResource("20_r06do")
+
+[node name="TextureRect" type="TextureRect" parent="2페이지/카드16" unique_id=1750503483]
+layout_mode = 0
+offset_left = 117.0
+offset_top = 667.0
+offset_right = 395.0
+offset_bottom = 1032.0
+texture = ExtResource("5_gxlxq")
+
+[node name="카드17" type="Control" parent="2페이지" unique_id=1458529108]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="2페이지/카드17" unique_id=1546858700]
+layout_mode = 0
+offset_left = 381.0
+offset_top = 677.0
+offset_right = 688.0
+offset_bottom = 995.0
+texture_normal = ExtResource("21_drlt3")
+
+[node name="TextureRect" type="TextureRect" parent="2페이지/카드17" unique_id=1041960865]
+layout_mode = 0
+offset_left = 394.0
+offset_top = 670.0
+offset_right = 672.0
+offset_bottom = 1035.0
+texture = ExtResource("5_gxlxq")
+
+[node name="카드18" type="Control" parent="2페이지" unique_id=893485958]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="2페이지/카드18" unique_id=2102582346]
+layout_mode = 0
+offset_left = 662.0
+offset_top = 656.0
+offset_right = 969.0
+offset_bottom = 1001.0
+texture_normal = ExtResource("22_p51i8")
+
+[node name="TextureRect" type="TextureRect" parent="2페이지/카드18" unique_id=290699648]
+layout_mode = 0
+offset_left = 672.0
+offset_top = 673.0
+offset_right = 950.0
+offset_bottom = 1038.0
+texture = ExtResource("5_gxlxq")
+
+[node name="카드19" type="Control" parent="2페이지" unique_id=1988758322]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="2페이지/카드19" unique_id=893754851]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 1006.0
+offset_right = 397.0
+offset_bottom = 1307.0
+texture_normal = ExtResource("23_5ywjt")
+
+[node name="TextureRect" type="TextureRect" parent="2페이지/카드19" unique_id=1894710255]
+layout_mode = 0
+offset_left = 118.0
+offset_top = 977.0
+offset_right = 396.0
+offset_bottom = 1342.0
+texture = ExtResource("5_gxlxq")
+
+[node name="카드20" type="Control" parent="2페이지" unique_id=935875381]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="2페이지/카드20" unique_id=2092676564]
+layout_mode = 0
+offset_left = 393.0
+offset_top = 998.0
+offset_right = 699.0
+offset_bottom = 1296.0
+texture_normal = ExtResource("24_rx84n")
+
+[node name="TextureRect" type="TextureRect" parent="2페이지/카드20" unique_id=1753595853]
+layout_mode = 0
+offset_left = 396.0
+offset_top = 977.0
+offset_right = 674.0
+offset_bottom = 1342.0
+texture = ExtResource("5_gxlxq")
+
+[node name="카드21" type="Control" parent="2페이지" unique_id=1696614094]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="2페이지/카드21" unique_id=82344078]
+layout_mode = 0
+offset_left = 674.0
+offset_top = 998.0
+offset_right = 972.0
+offset_bottom = 1309.0
+texture_normal = ExtResource("25_3x6q0")
+
+[node name="TextureRect" type="TextureRect" parent="2페이지/카드21" unique_id=1029076902]
+layout_mode = 0
+offset_left = 676.0
+offset_top = 978.0
+offset_right = 954.0
+offset_bottom = 1343.0
+texture = ExtResource("5_gxlxq")
+
+[node name="카드22" type="Control" parent="2페이지" unique_id=1980894296]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="2페이지/카드22" unique_id=178609392]
+layout_mode = 0
+offset_left = 119.0
+offset_top = 1304.0
+offset_right = 417.0
+offset_bottom = 1636.0
+texture_normal = ExtResource("26_53046")
+
+[node name="TextureRect" type="TextureRect" parent="2페이지/카드22" unique_id=1606146326]
+layout_mode = 0
+offset_left = 120.000015
+offset_top = 1285.5255
+offset_right = 398.0
+offset_bottom = 1650.5255
+texture = ExtResource("5_gxlxq")
+
+[node name="카드23" type="Control" parent="2페이지" unique_id=1387110444]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="2페이지/카드23" unique_id=2003890088]
+layout_mode = 0
+offset_left = 394.0
+offset_top = 1304.0
+offset_right = 690.0
+offset_bottom = 1649.0
+texture_normal = ExtResource("27_rwslg")
+
+[node name="TextureRect" type="TextureRect" parent="2페이지/카드23" unique_id=132517472]
+layout_mode = 0
+offset_left = 396.0
+offset_top = 1287.0
+offset_right = 674.0
+offset_bottom = 1652.0
+texture = ExtResource("5_gxlxq")
+
+[node name="카드24" type="Control" parent="2페이지" unique_id=1177915610]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="2페이지/카드24" unique_id=29343476]
+layout_mode = 0
+offset_left = 672.0
+offset_top = 1315.0
+offset_right = 981.0
+offset_bottom = 1640.0
+scale = Vector2(1, 1.0041296)
+texture_normal = ExtResource("28_yqyvm")
+
+[node name="TextureRect" type="TextureRect" parent="2페이지/카드24" unique_id=364704984]
+layout_mode = 0
+offset_left = 679.0
+offset_top = 1288.0
+offset_right = 957.0
+offset_bottom = 1653.0
+texture = ExtResource("5_gxlxq")
+
+[connection signal="pressed" from="X 버튼" to="." method="_on_x_버튼_pressed"]
+[connection signal="pressed" from="1페이지 버튼" to="." method="_on_page1_button_pressed"]
+[connection signal="pressed" from="2페이지 버튼" to="." method="_on_page2_button_pressed"]
+[connection signal="pressed" from="1페이지/카드1/TextureButton" to="." method="_on_카드1_texture_button_pressed"]
+[connection signal="pressed" from="1페이지/카드2/TextureButton" to="." method="_on_카드2_texture_button_pressed"]
+[connection signal="pressed" from="1페이지/카드3/TextureButton" to="." method="_on_카드3_texture_button_pressed"]
+[connection signal="pressed" from="1페이지/카드4/TextureButton" to="." method="_on_카드4_texture_button_pressed"]
+[connection signal="pressed" from="1페이지/카드5/TextureButton" to="." method="_on_카드5_texture_button_pressed"]
+[connection signal="pressed" from="1페이지/카드6/TextureButton" to="." method="_on_카드6_texture_button_pressed"]
+[connection signal="pressed" from="1페이지/카드7/TextureButton" to="." method="_on_카드7_texture_button_pressed"]
+[connection signal="pressed" from="1페이지/카드8/TextureButton" to="." method="_on_카드8_texture_button_pressed"]
+[connection signal="pressed" from="1페이지/카드9/TextureButton" to="." method="_on_카드9_texture_button_pressed"]
+[connection signal="pressed" from="1페이지/카드10/TextureButton" to="." method="_on_카드10_texture_button_pressed"]
+[connection signal="pressed" from="1페이지/카드11/TextureButton" to="." method="_on_카드11_texture_button_pressed"]
+[connection signal="pressed" from="1페이지/카드12/TextureButton" to="." method="_on_카드12_texture_button_pressed"]
+[connection signal="pressed" from="2페이지/카드13/TextureButton" to="." method="_on_카드13_texture_button_pressed"]
+[connection signal="pressed" from="2페이지/카드14/TextureButton" to="." method="_on_카드14_texture_button_pressed"]
+[connection signal="pressed" from="2페이지/카드15/TextureButton" to="." method="_on_카드15_texture_button_pressed"]
+[connection signal="pressed" from="2페이지/카드16/TextureButton" to="." method="_on_카드16_texture_button_pressed"]
+[connection signal="pressed" from="2페이지/카드17/TextureButton" to="." method="_on_카드17_texture_button_pressed"]
+[connection signal="pressed" from="2페이지/카드18/TextureButton" to="." method="_on_카드18_texture_button_pressed"]
+[connection signal="pressed" from="2페이지/카드19/TextureButton" to="." method="_on_카드19_texture_button_pressed"]
+[connection signal="pressed" from="2페이지/카드20/TextureButton" to="." method="_on_카드20_texture_button_pressed"]
+[connection signal="pressed" from="2페이지/카드21/TextureButton" to="." method="_on_카드21_texture_button_pressed"]
+[connection signal="pressed" from="2페이지/카드22/TextureButton" to="." method="_on_카드22_texture_button_pressed"]
+[connection signal="pressed" from="2페이지/카드23/TextureButton" to="." method="_on_카드23_texture_button_pressed"]
+[connection signal="pressed" from="2페이지/카드24/TextureButton" to="." method="_on_카드24_texture_button_pressed"]

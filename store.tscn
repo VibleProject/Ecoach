@@ -1,0 +1,178 @@
+[gd_scene format=3 uid="uid://7kdrbvmgp3if"]
+
+[ext_resource type="Script" uid="uid://dsnicpf3h12r7" path="res://store.gd" id="1_a4gqu"]
+[ext_resource type="Texture2D" uid="uid://kbhbv52pehpl" path="res://상점 배경.png" id="1_x7ts4"]
+[ext_resource type="Texture2D" uid="uid://bavakt0y3yjwh" path="res://store/알.png" id="2_s3f3m"]
+[ext_resource type="Texture2D" uid="uid://bccebtp3vymbc" path="res://store/캐시 칸.PNG" id="3_jdgcu"]
+[ext_resource type="Texture2D" uid="uid://wpwmdq5tj8ff" path="res://store/X 버튼.png" id="3_mxlhg"]
+[ext_resource type="Texture2D" uid="uid://bcd3u8jrg25hc" path="res://store/500_캐시.png" id="6_ecxbg"]
+[ext_resource type="Texture2D" uid="uid://bsef8qyu7eeof" path="res://산소 구메.png" id="6_fsgxa"]
+[ext_resource type="Texture2D" uid="uid://cmhabrbkblbi" path="res://store/100_캐시.png" id="8_0sk1s"]
+[ext_resource type="Texture2D" uid="uid://8u8g7kypdfg5" path="res://store/물 구매.png" id="8_nvomd"]
+[ext_resource type="Texture2D" uid="uid://gsokl44qspfh" path="res://store/버ㅓ튼.png" id="10_hayl1"]
+
+[sub_resource type="FontVariation" id="FontVariation_sxxsk"]
+
+[node name="Control" type="Control" unique_id=949683414]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a4gqu")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=102855248]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_x7ts4")
+stretch_mode = 6
+
+[node name="알버튼" type="TextureButton" parent="." unique_id=898547255]
+layout_mode = 0
+offset_left = 149.0
+offset_top = 642.0
+offset_right = 549.0
+offset_bottom = 1042.0
+texture_normal = ExtResource("2_s3f3m")
+
+[node name="X 버튼" type="TextureButton" parent="." unique_id=550045500]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.99600005
+anchor_right = 0.99600005
+offset_left = -118.120056
+offset_top = 12.0
+offset_right = 31.879944
+offset_bottom = 143.0
+scale = Vector2(0.7890318, 0.7890318)
+texture_normal = ExtResource("3_mxlhg")
+
+[node name="산소" type="Control" parent="." unique_id=22701274]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="산소" unique_id=542203506]
+layout_mode = 0
+offset_left = 67.0
+offset_top = 395.00003
+offset_right = 533.0
+offset_bottom = 769.0
+scale = Vector2(0.60987395, 0.60987395)
+texture = ExtResource("6_fsgxa")
+
+[node name="TextureButton" type="TextureButton" parent="산소" unique_id=914932912]
+layout_mode = 0
+offset_left = 67.00001
+offset_top = 526.0
+offset_right = 394.0
+offset_bottom = 657.00006
+scale = Vector2(0.861467, 0.861467)
+texture_normal = ExtResource("6_ecxbg")
+
+[node name="물" type="Control" parent="." unique_id=261956115]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="물" unique_id=812096974]
+layout_mode = 0
+offset_left = 378.00003
+offset_top = 395.99997
+offset_right = 824.0
+offset_bottom = 765.0
+scale = Vector2(0.61877304, 0.61877304)
+texture = ExtResource("8_nvomd")
+
+[node name="TextureButton" type="TextureButton" parent="물" unique_id=1105203922]
+layout_mode = 0
+offset_left = 382.0
+offset_top = 540.0
+offset_right = 704.0
+offset_bottom = 671.0
+scale = Vector2(0.8606633, 0.8606633)
+texture_normal = ExtResource("8_0sk1s")
+
+[node name="산소 개수" type="Control" parent="." unique_id=1644098707]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="산소 개수" unique_id=1979606475]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 337.0
+offset_right = 567.0
+offset_bottom = 421.0
+scale = Vector2(0.27040097, 0.78923446)
+texture = ExtResource("10_hayl1")
+
+[node name="o2_label" type="Label" parent="산소 개수" unique_id=423139695]
+layout_mode = 0
+offset_left = 289.0
+offset_top = 347.0
+offset_right = 329.0
+offset_bottom = 389.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "0"
+
+[node name="물 개수" type="Control" parent="." unique_id=224266542]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="물 개수" unique_id=556599306]
+layout_mode = 0
+offset_left = 383.0
+offset_top = 336.0001
+offset_right = 694.0
+offset_bottom = 420.0001
+scale = Vector2(0.26582676, 0.79056066)
+texture = ExtResource("10_hayl1")
+
+[node name="water_label" type="Label" parent="물 개수" unique_id=239175842]
+layout_mode = 0
+offset_left = 413.0
+offset_top = 348.0
+offset_right = 453.0
+offset_bottom = 390.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "0"
+
+[node name="Control" type="Control" parent="." unique_id=1278980874]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="Control" unique_id=931560766]
+layout_mode = 0
+offset_left = 1.9999974
+offset_top = -20.000002
+offset_right = 485.0
+offset_bottom = 216.75641
+scale = Vector2(0.66877234, 0.6546815)
+texture = ExtResource("3_jdgcu")
+
+[node name="Label" type="Label" parent="Control" unique_id=1116538127]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 131.0
+offset_top = 32.0
+offset_right = 351.0
+offset_bottom = 201.0
+theme_override_fonts/font = SubResource("FontVariation_sxxsk")
+theme_override_font_sizes/font_size = 40
+text = "100
+"
+
+[connection signal="pressed" from="알버튼" to="." method="_on_알버튼_pressed"]
+[connection signal="pressed" from="X 버튼" to="." method="_on_x_버튼_pressed"]
+[connection signal="pressed" from="산소/TextureButton" to="." method="_on_산소_texture_button_pressed"]
+[connection signal="pressed" from="물/TextureButton" to="." method="_on_물_texture_button_pressed"]
