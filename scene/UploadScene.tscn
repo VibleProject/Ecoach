@@ -1,0 +1,130 @@
+[gd_scene format=3 uid="uid://dppygueclvw2m"]
+
+[ext_resource type="Script" uid="uid://caettevpblok4" path="res://script/UploadScene.gd" id="1_eutjw"]
+[ext_resource type="Texture2D" uid="uid://c283vo36h327w" path="res://templates/Backgound.png" id="2_do3oy"]
+[ext_resource type="Texture2D" uid="uid://b020mpwff1psw" path="res://templates/GoBack.png" id="3_4rvbp"]
+[ext_resource type="Texture2D" uid="uid://dtvltvsi65ebl" path="res://templates/Mission.png" id="4_do3oy"]
+[ext_resource type="Texture2D" uid="uid://bt3gqm07fuwcd" path="res://templates/PanelTitle.png" id="4_roa56"]
+[ext_resource type="Texture2D" uid="uid://cru10mcxw7a6q" path="res://templates/Panel.png" id="5_yf4u2"]
+[ext_resource type="Texture2D" uid="uid://jd10f8n3nl2q" path="res://templates/button.png" id="7_g8nrb"]
+[ext_resource type="Texture2D" uid="uid://cvro2fep4ditc" path="res://templates/BottleWarning.png" id="7_yf4u2"]
+[ext_resource type="Texture2D" uid="uid://b68m4uk4pxnyq" path="res://templates/Upload.png" id="8_1hxq3"]
+[ext_resource type="Texture2D" uid="uid://dlybwqabvg5ya" path="res://templates/Moneybar.png" id="10_1hxq3"]
+
+[node name="UploadScene" type="Node2D" unique_id=1154030638]
+script = ExtResource("1_eutjw")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=254960868]
+position = Vector2(360, 640)
+scale = Vector2(0.7651435, 0.76555026)
+texture = ExtResource("2_do3oy")
+
+[node name="AnalyzeRequest" type="HTTPRequest" parent="." unique_id=1557597559]
+
+[node name="ImageDialog" type="FileDialog" parent="." unique_id=1023016639]
+oversampling_override = 1.0
+title = "Open a File"
+file_mode = 0
+access = 2
+filters = PackedStringArray("*.png", "*.jpg", "*.jpeg")
+use_native_dialog = true
+
+[node name="PanelTitle" type="Sprite2D" parent="." unique_id=167502226]
+position = Vector2(360, 353)
+scale = Vector2(0.35, 0.28)
+texture = ExtResource("4_roa56")
+
+[node name="MissionSprite" type="Sprite2D" parent="." unique_id=330415183]
+position = Vector2(360, 354)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_do3oy")
+
+[node name="Panel" type="Sprite2D" parent="." unique_id=1564164310]
+position = Vector2(356, 680)
+scale = Vector2(0.53776044, 0.57128906)
+texture = ExtResource("5_yf4u2")
+
+[node name="MissionTitle" type="Sprite2D" parent="." unique_id=1842793045]
+position = Vector2(360, 172)
+scale = Vector2(0.8, 0.727)
+texture = ExtResource("4_do3oy")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2030186992]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=1131893620]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BackButton" type="TextureButton" parent="CanvasLayer/Control" unique_id=1205171019]
+layout_mode = 0
+offset_left = 561.0
+offset_top = 13.0
+offset_right = 1517.2585
+offset_bottom = 968.3087
+scale = Vector2(0.13905177, 0.13674667)
+texture_normal = ExtResource("3_4rvbp")
+ignore_texture_size = true
+
+[node name="NoticeLabel" type="Label" parent="CanvasLayer/Control" unique_id=1862498627]
+layout_mode = 0
+offset_left = 195.0
+offset_top = 527.0
+offset_right = 647.0
+offset_bottom = 578.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 36
+text = "* 주의 사항"
+autowrap_mode = 3
+
+[node name="UploadButton" type="TextureButton" parent="CanvasLayer/Control" unique_id=800198741]
+custom_minimum_size = Vector2(200, 80)
+layout_mode = 0
+offset_left = -643.0
+offset_top = 789.0
+offset_right = 1355.0
+offset_bottom = 1217.0
+scale = Vector2(0.28, 0.272)
+pivot_offset = Vector2(999, 214)
+texture_normal = ExtResource("7_g8nrb")
+
+[node name="Upload" type="Sprite2D" parent="CanvasLayer/Control/UploadButton" unique_id=1400162664]
+position = Vector2(999.00024, 193.36328)
+scale = Vector2(2.2, 2.27)
+texture = ExtResource("8_1hxq3")
+
+[node name="WarningSprite" type="Sprite2D" parent="." unique_id=2058346646]
+position = Vector2(403.00003, 719.99994)
+scale = Vector2(0.85, 0.85)
+texture = ExtResource("7_yf4u2")
+
+[node name="Moneybar" type="Sprite2D" parent="." unique_id=310891010]
+position = Vector2(145, 63)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("10_1hxq3")
+
+[node name="MoneyLabel" type="Label" parent="Moneybar" unique_id=208389460]
+offset_left = -129.99991
+offset_top = -31.666664
+offset_right = 156.00009
+offset_bottom = 37.333336
+pivot_offset = Vector2(286, 0)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 45
+text = "0"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="." unique_id=1709328211]
+offset_top = 915.0
+offset_right = 720.0
+offset_bottom = 938.0
+pivot_offset = Vector2(220, 0)
+theme_override_colors/font_color = Color(0, 0, 0, 0.39215687)
+theme_override_font_sizes/font_size = 18
+text = "서버 연결로 인해 최대 1분 정도 소요될 수 있습니다"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="CanvasLayer/Control/BackButton" to="." method="_on_back_button_pressed"]

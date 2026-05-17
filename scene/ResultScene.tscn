@@ -1,0 +1,145 @@
+[gd_scene format=3 uid="uid://cnafilox1fky"]
+
+[ext_resource type="Script" uid="uid://c17yft13qxf6x" path="res://script/ResultScene.gd" id="1_vs68l"]
+[ext_resource type="Texture2D" uid="uid://c8uoxjb8kg2ym" path="res://templates/Backgound.png" id="2_4640o"]
+[ext_resource type="Texture2D" uid="uid://dgvvvg008dyue" path="res://templates/MissionSuccess.png" id="3_4640o"]
+[ext_resource type="Texture2D" uid="uid://cf8a3a8xtxani" path="res://templates/Panel.png" id="3_ivuly"]
+[ext_resource type="Texture2D" uid="uid://bbgw6q2lubbjy" path="res://templates/button.png" id="5_mpkbt"]
+[ext_resource type="Texture2D" uid="uid://dsmjcnycfwu3q" path="res://templates/GoList.png" id="6_6y8xe"]
+[ext_resource type="Texture2D" uid="uid://c4daefj4l1f4b" path="res://templates/Home.png" id="7_jharg"]
+[ext_resource type="Texture2D" uid="uid://b8k0ty1lwvkyu" path="res://templates/Moneybar.png" id="8_jharg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vs68l"]
+bg_color = Color(0, 0, 0, 0.5647059)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="ResultScene" type="Node2D" unique_id=57844437]
+script = ExtResource("1_vs68l")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=2094617113]
+position = Vector2(360, 640)
+scale = Vector2(0.7651435, 0.76555026)
+texture = ExtResource("2_4640o")
+
+[node name="Panel" type="Sprite2D" parent="." unique_id=591388547]
+position = Vector2(356, 588.9999)
+scale = Vector2(0.53776044, 0.57128906)
+texture = ExtResource("3_ivuly")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2136931953]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=587359303]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 360.0
+offset_top = 640.0
+offset_right = 360.0
+offset_bottom = 640.0
+
+[node name="RewardLabel" type="Label" parent="CanvasLayer/Control" unique_id=900278949]
+layout_mode = 0
+offset_left = -359.0
+offset_top = -223.0
+offset_right = 360.0
+offset_bottom = -139.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 42
+text = "(보상 라벨)"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="CommentLabel" type="Label" parent="CanvasLayer/Control" unique_id=1195149858]
+layout_mode = 0
+offset_left = -252.0
+offset_top = -112.0
+offset_right = 248.0
+offset_bottom = 92.0
+pivot_offset = Vector2(250, 122)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 28
+text = "AI 한 줄 평"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Control" unique_id=1106224170]
+layout_mode = 0
+offset_left = -360.0
+offset_top = 247.0
+offset_right = 360.0
+offset_bottom = 349.0
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="DetailButton1" type="Button" parent="CanvasLayer/Control/HBoxContainer" unique_id=1407059842]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_vs68l")
+text = "기준 1"
+
+[node name="DetailButton2" type="Button" parent="CanvasLayer/Control/HBoxContainer" unique_id=240103964]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_vs68l")
+text = "기준 2"
+
+[node name="DetailButton3" type="Button" parent="CanvasLayer/Control/HBoxContainer" unique_id=2055892890]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_vs68l")
+text = "기준 3"
+
+[node name="StatusSprite" type="Sprite2D" parent="CanvasLayer/Control" unique_id=1171299582]
+position = Vector2(0, -467.99994)
+scale = Vector2(0.8, 0.727)
+texture = ExtResource("3_4640o")
+
+[node name="BackButton" type="TextureButton" parent="CanvasLayer" unique_id=790220008]
+custom_minimum_size = Vector2(200, 80)
+offset_left = -643.0
+offset_top = 924.0
+offset_right = 1355.0
+offset_bottom = 1352.0
+scale = Vector2(0.28, 0.272)
+pivot_offset = Vector2(999, 214)
+texture_normal = ExtResource("5_mpkbt")
+
+[node name="Upload" type="Sprite2D" parent="CanvasLayer/BackButton" unique_id=295711564]
+position = Vector2(999.00024, 193.36328)
+scale = Vector2(2.2, 2.27)
+texture = ExtResource("6_6y8xe")
+
+[node name="HomeButton" type="TextureButton" parent="CanvasLayer" unique_id=1772228018]
+offset_left = 573.00006
+offset_top = 23.000006
+offset_right = 1827.0
+offset_bottom = 1277.0
+scale = Vector2(0.095, 0.095)
+texture_normal = ExtResource("7_jharg")
+
+[node name="Moneybar" type="Sprite2D" parent="." unique_id=1878273592]
+position = Vector2(145, 63)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("8_jharg")
+
+[node name="MoneyLabel" type="Label" parent="Moneybar" unique_id=1119474941]
+offset_left = -129.99991
+offset_top = -31.666664
+offset_right = 156.00009
+offset_bottom = 37.333336
+pivot_offset = Vector2(286, 0)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 45
+text = "0"
+horizontal_alignment = 2
+vertical_alignment = 1

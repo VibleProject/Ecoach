@@ -1,0 +1,244 @@
+[gd_scene format=3 uid="uid://d3i6k7hrqebpf"]
+
+[ext_resource type="Script" uid="uid://dg4rr8ogf0o0g" path="res://script/StartScene.gd" id="1_yjs8v"]
+[ext_resource type="Texture2D" uid="uid://c283vo36h327w" path="res://templates/Backgound.png" id="2_2prk5"]
+[ext_resource type="Texture2D" uid="uid://b020mpwff1psw" path="res://templates/GoBack.png" id="3_5yu3p"]
+[ext_resource type="Texture2D" uid="uid://jd10f8n3nl2q" path="res://templates/button.png" id="4_2prk5"]
+[ext_resource type="Texture2D" uid="uid://ca8ikevfyblit" path="res://templates/Bottle.png" id="4_6m53q"]
+[ext_resource type="Texture2D" uid="uid://dv0i8lwnwpkd1" path="res://templates/Outlet.png" id="5_jbppv"]
+[ext_resource type="Texture2D" uid="uid://csivqyxk8wf5y" path="res://templates/Receipt.png" id="6_534hi"]
+[ext_resource type="Texture2D" uid="uid://4pcghipegyd3" path="res://templates/Shopping.png" id="7_7d0kd"]
+[ext_resource type="Texture2D" uid="uid://dschhr8nw0o7n" path="res://templates/Tumbler.png" id="8_yjs0w"]
+[ext_resource type="Texture2D" uid="uid://dbu3dkc0ewarj" path="res://templates/Transit.png" id="9_w8uoe"]
+[ext_resource type="Texture2D" uid="uid://dtvltvsi65ebl" path="res://templates/Mission.png" id="11_kcvh3"]
+[ext_resource type="Texture2D" uid="uid://dlybwqabvg5ya" path="res://templates/Moneybar.png" id="12_jbppv"]
+
+[node name="StartScene" type="Node2D" unique_id=711565443]
+script = ExtResource("1_yjs8v")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=628089171]
+position = Vector2(360, 640)
+scale = Vector2(0.7651435, 0.76555026)
+texture = ExtResource("2_2prk5")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=672689988]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=1991178999]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BottleButton" type="TextureButton" parent="CanvasLayer/Control" unique_id=1266858135]
+custom_minimum_size = Vector2(200, 80)
+layout_mode = 0
+offset_left = -643.0
+offset_top = 110.00003
+offset_right = 1355.0
+offset_bottom = 538.0
+scale = Vector2(0.265, 0.25681385)
+pivot_offset = Vector2(999, 214)
+texture_normal = ExtResource("4_2prk5")
+
+[node name="Bottle" type="Sprite2D" parent="CanvasLayer/Control/BottleButton" unique_id=797191660]
+position = Vector2(999.00024, 193.36328)
+scale = Vector2(2.2, 2.27)
+texture = ExtResource("4_6m53q")
+
+[node name="Bottle_count" type="Label" parent="CanvasLayer/Control/BottleButton" unique_id=1108559819]
+layout_mode = 0
+offset_left = 1705.0
+offset_top = 130.0
+offset_right = 1842.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(0, 0, 0, 0.45490196)
+theme_override_font_sizes/font_size = 80
+text = "700"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OutletButton" type="TextureButton" parent="CanvasLayer/Control" unique_id=812239717]
+custom_minimum_size = Vector2(200, 80)
+layout_mode = 0
+offset_left = -643.0
+offset_top = 230.0
+offset_right = 1355.0
+offset_bottom = 658.0
+scale = Vector2(0.265, 0.25681385)
+pivot_offset = Vector2(999, 214)
+texture_normal = ExtResource("4_2prk5")
+
+[node name="Outlet" type="Sprite2D" parent="CanvasLayer/Control/OutletButton" unique_id=151266467]
+position = Vector2(999.00024, 193.36328)
+scale = Vector2(2.2, 2.27)
+texture = ExtResource("5_jbppv")
+
+[node name="Outlet_count" type="Label" parent="CanvasLayer/Control/OutletButton" unique_id=927754150]
+layout_mode = 0
+offset_left = 1705.0
+offset_top = 130.0
+offset_right = 1842.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(0, 0, 0, 0.45490196)
+theme_override_font_sizes/font_size = 80
+text = "500"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ReceiptButton" type="TextureButton" parent="CanvasLayer/Control" unique_id=1276944743]
+custom_minimum_size = Vector2(200, 80)
+layout_mode = 0
+offset_left = -643.0
+offset_top = 350.0
+offset_right = 1355.0
+offset_bottom = 778.0
+scale = Vector2(0.265, 0.25681385)
+pivot_offset = Vector2(999, 214)
+texture_normal = ExtResource("4_2prk5")
+
+[node name="Receipt" type="Sprite2D" parent="CanvasLayer/Control/ReceiptButton" unique_id=1431635639]
+position = Vector2(999.00024, 193.36328)
+scale = Vector2(2.2, 2.27)
+texture = ExtResource("6_534hi")
+
+[node name="Receipt_count" type="Label" parent="CanvasLayer/Control/ReceiptButton" unique_id=429181476]
+layout_mode = 0
+offset_left = 1705.0
+offset_top = 130.0
+offset_right = 1842.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(0, 0, 0, 0.45490196)
+theme_override_font_sizes/font_size = 80
+text = "500"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ShoppingButton" type="TextureButton" parent="CanvasLayer/Control" unique_id=1795925599]
+custom_minimum_size = Vector2(200, 80)
+layout_mode = 0
+offset_left = -643.0
+offset_top = 470.0
+offset_right = 1355.0
+offset_bottom = 898.0
+scale = Vector2(0.265, 0.25681385)
+pivot_offset = Vector2(999, 214)
+texture_normal = ExtResource("4_2prk5")
+
+[node name="Shopping" type="Sprite2D" parent="CanvasLayer/Control/ShoppingButton" unique_id=1145282315]
+position = Vector2(999.00024, 193.36328)
+scale = Vector2(2.2, 2.27)
+texture = ExtResource("7_7d0kd")
+
+[node name="Shopping_count" type="Label" parent="CanvasLayer/Control/ShoppingButton" unique_id=2135251879]
+layout_mode = 0
+offset_left = 1705.0
+offset_top = 130.0
+offset_right = 1842.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(0, 0, 0, 0.45490196)
+theme_override_font_sizes/font_size = 80
+text = "600"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TumblerButton" type="TextureButton" parent="CanvasLayer/Control" unique_id=379570582]
+custom_minimum_size = Vector2(200, 80)
+layout_mode = 0
+offset_left = -643.0
+offset_top = 590.0
+offset_right = 1355.0
+offset_bottom = 1018.0
+scale = Vector2(0.265, 0.25681385)
+pivot_offset = Vector2(999, 214)
+texture_normal = ExtResource("4_2prk5")
+
+[node name="Tumbler" type="Sprite2D" parent="CanvasLayer/Control/TumblerButton" unique_id=1169781652]
+position = Vector2(999.00024, 193.36328)
+scale = Vector2(2.2, 2.27)
+texture = ExtResource("8_yjs0w")
+
+[node name="Tumbler_conut" type="Label" parent="CanvasLayer/Control/TumblerButton" unique_id=771857898]
+layout_mode = 0
+offset_left = 1705.0
+offset_top = 130.0
+offset_right = 1842.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(0, 0, 0, 0.45490196)
+theme_override_font_sizes/font_size = 80
+text = "800"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TransitButton" type="TextureButton" parent="CanvasLayer/Control" unique_id=1334973867]
+custom_minimum_size = Vector2(200, 80)
+layout_mode = 0
+offset_left = -643.0
+offset_top = 710.0
+offset_right = 1355.0
+offset_bottom = 1138.0
+scale = Vector2(0.265, 0.25681385)
+pivot_offset = Vector2(999, 214)
+texture_normal = ExtResource("4_2prk5")
+
+[node name="Transit" type="Sprite2D" parent="CanvasLayer/Control/TransitButton" unique_id=679812006]
+position = Vector2(999.00024, 193.36328)
+scale = Vector2(2.2, 2.27)
+texture = ExtResource("9_w8uoe")
+
+[node name="Transit_count" type="Label" parent="CanvasLayer/Control/TransitButton" unique_id=1292401696]
+layout_mode = 0
+offset_left = 1705.0
+offset_top = 130.0
+offset_right = 1842.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(0, 0, 0, 0.45490196)
+theme_override_font_sizes/font_size = 80
+text = "500"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackButton" type="TextureButton" parent="CanvasLayer/Control" unique_id=1715143095]
+layout_mode = 0
+offset_left = 561.0
+offset_top = 13.0
+offset_right = 1517.2585
+offset_bottom = 968.3087
+scale = Vector2(0.13905177, 0.13674667)
+texture_normal = ExtResource("3_5yu3p")
+ignore_texture_size = true
+
+[node name="Mission" type="Sprite2D" parent="." unique_id=1970418695]
+position = Vector2(360, 172)
+scale = Vector2(0.8, 0.727)
+texture = ExtResource("11_kcvh3")
+
+[node name="Moneybar" type="Sprite2D" parent="." unique_id=784559991]
+position = Vector2(145, 63)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("12_jbppv")
+
+[node name="MoneyLabel" type="Label" parent="Moneybar" unique_id=948821834]
+offset_left = -129.99991
+offset_top = -31.666664
+offset_right = 156.00009
+offset_bottom = 37.333336
+pivot_offset = Vector2(286, 0)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 45
+text = "0"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="TimerLabel" type="Label" parent="." unique_id=1162652073]
+offset_left = 343.0
+offset_top = 254.0
+offset_right = 611.0
+offset_bottom = 289.0
+theme_override_colors/font_color = Color(0, 0, 0, 0.39215687)
+theme_override_font_sizes/font_size = 24
+text = "리셋까지 00:00:00"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[connection signal="pressed" from="CanvasLayer/Control/BottleButton" to="." method="_on_bottle_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/BackButton" to="." method="_on_back_button_pressed"]
