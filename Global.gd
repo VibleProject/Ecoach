@@ -17,7 +17,7 @@ var current_category: String = "bottle"
 # 테스트용
 # 60 = 1분
 # 86400 = 24시간
-const DAILY_RESET_SECONDS = 60
+const DAILY_RESET_SECONDS = 86400
 const ALL_MISSIONS = ["bottle", "outlet", "receipt", "shopping", "tumbler", "transit"]
 
 var daily_missions = []
